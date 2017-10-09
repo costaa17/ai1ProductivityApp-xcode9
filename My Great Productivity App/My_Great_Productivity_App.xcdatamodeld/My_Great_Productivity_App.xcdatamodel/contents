@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11759" systemVersion="16A323" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Break" representedClassName="Break" parentEntity="Task" syncable="YES" codeGenerationType="class"/>
+    <entity name="Group" representedClassName="Group" isAbstract="YES" parentEntity="PlanIten" syncable="YES" codeGenerationType="class">
+        <attribute name="color" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="index" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="group" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Group" inverseName="tasks" inverseEntity="Group" syncable="YES"/>
+        <relationship name="tasks" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Group" inverseName="group" inverseEntity="Group" syncable="YES"/>
+    </entity>
+    <entity name="List" representedClassName="List" parentEntity="Group" syncable="YES" codeGenerationType="class"/>
+    <entity name="Plan" representedClassName="Plan" syncable="YES" codeGenerationType="class">
+        <attribute name="breakDuration" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="breakEvery" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="day" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="endTime" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="orderBy" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="startTime" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="planIten" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="PlanIten" inverseName="plan" inverseEntity="PlanIten" syncable="YES"/>
+    </entity>
+    <entity name="PlanIten" representedClassName="PlanIten" isAbstract="YES" syncable="YES" codeGenerationType="class">
+        <attribute name="planIndex" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="plan" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Plan" inverseName="planIten" inverseEntity="Plan" syncable="YES"/>
+    </entity>
+    <entity name="SplitTask" representedClassName="SplitTask" parentEntity="TaskSetUp" syncable="YES" codeGenerationType="class">
+        <relationship name="parentTask" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="TaskSetUp" inverseName="splitTasks" inverseEntity="TaskSetUp" syncable="YES"/>
+    </entity>
+    <entity name="Task" representedClassName="Task" parentEntity="TaskSetUp" syncable="YES" codeGenerationType="class"/>
+    <entity name="TaskSetUp" representedClassName="TaskSetUp" parentEntity="Group" syncable="YES" codeGenerationType="class">
+        <attribute name="amountDone" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="amountDoneType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="completed" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="due" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="duration" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="notes" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="points" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="priority" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="repeatN" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="time" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="splitTasks" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="SplitTask" inverseName="parentTask" inverseEntity="SplitTask" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Break" positionX="-441" positionY="396" width="128" height="45"/>
+        <element name="Group" positionX="-227" positionY="198" width="128" height="120"/>
+        <element name="List" positionX="-227" positionY="396" width="128" height="45"/>
+        <element name="Plan" positionX="-0" positionY="138" width="128" height="150"/>
+        <element name="PlanIten" positionX="-234" positionY="90" width="128" height="75"/>
+        <element name="SplitTask" positionX="-216" positionY="153" width="128" height="60"/>
+        <element name="Task" positionX="-225" positionY="252" width="128" height="45"/>
+        <element name="TaskSetUp" positionX="-441" positionY="162" width="128" height="208"/>
+    </elements>
+</model>

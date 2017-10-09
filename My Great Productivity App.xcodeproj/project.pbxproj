@@ -1,0 +1,814 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		241D9AF31E6C813000A3F51C /* ChoseTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241D9AF21E6C813000A3F51C /* ChoseTaskViewController.swift */; };
+		2423ACE81E51579800C9E8F8 /* Tasks.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2423ACE61E51579800C9E8F8 /* Tasks.storyboard */; };
+		2423ACEB1E515D1600C9E8F8 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2423ACEA1E515D1600C9E8F8 /* TodayViewController.swift */; };
+		24291DED1E7E1B94004965BC /* DayPlannerMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24291DEC1E7E1B94004965BC /* DayPlannerMain.swift */; };
+		24291DEF1E7F42F9004965BC /* ExistingPlansTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24291DEE1E7F42F9004965BC /* ExistingPlansTableView.swift */; };
+		24354CCC1E456EBB003300A7 /* PointsPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24354CCB1E456EBB003300A7 /* PointsPickerView.swift */; };
+		24354CD21E457469003300A7 /* useful.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24354CD11E457469003300A7 /* useful.swift */; };
+		24354CD41E459628003300A7 /* TasksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24354CD31E459628003300A7 /* TasksTableViewController.swift */; };
+		24354CD61E45967B003300A7 /* TaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24354CD51E45967B003300A7 /* TaskCell.swift */; };
+		2441565F1E6FAE78006DA70E /* PlanTaskTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2441565E1E6FAE78006DA70E /* PlanTaskTableView.swift */; };
+		244682721E5E3EB9004E716D /* Today+Overdue.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 244682701E5E3EB9004E716D /* Today+Overdue.storyboard */; };
+		244682741E5E4049004E716D /* OrderByPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244682731E5E4049004E716D /* OrderByPicker.swift */; };
+		2446827A1E5E415E004E716D /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244682791E5E415E004E716D /* Extension.swift */; };
+		2446827C1E5E45E3004E716D /* CreatePlanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2446827B1E5E45E3004E716D /* CreatePlanViewController.swift */; };
+		2446827E1E66290F004E716D /* AdjustPlanViewController .swift in Sources */ = {isa = PBXBuildFile; fileRef = 2446827D1E66290F004E716D /* AdjustPlanViewController .swift */; };
+		2448C81A1E481A3D003FFA20 /* SortPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2448C8191E481A3D003FFA20 /* SortPicker.swift */; };
+		2448C81C1E49061F003FFA20 /* RepeatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2448C81B1E49061F003FFA20 /* RepeatViewController.swift */; };
+		244A136E1E4194EF00A8133A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244A136D1E4194EF00A8133A /* AppDelegate.swift */; };
+		244A13701E4194EF00A8133A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244A136F1E4194EF00A8133A /* ViewController.swift */; };
+		244A13731E4194EF00A8133A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 244A13711E4194EF00A8133A /* Main.storyboard */; };
+		244A13761E4194EF00A8133A /* My_Great_Productivity_App.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 244A13741E4194EF00A8133A /* My_Great_Productivity_App.xcdatamodeld */; };
+		244A13781E4194EF00A8133A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 244A13771E4194EF00A8133A /* Assets.xcassets */; };
+		244A137B1E4194EF00A8133A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 244A13791E4194EF00A8133A /* LaunchScreen.storyboard */; };
+		244A13861E4194EF00A8133A /* My_Great_Productivity_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244A13851E4194EF00A8133A /* My_Great_Productivity_AppTests.swift */; };
+		244A13911E4194F000A8133A /* My_Great_Productivity_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244A13901E4194F000A8133A /* My_Great_Productivity_AppUITests.swift */; };
+		2452C11B1F8B32970000771D /* CellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2452C11A1F8B32970000771D /* CellView.swift */; };
+		245A304D1E9820890015EE7F /* TaskDoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245A304C1E9820890015EE7F /* TaskDoneViewController.swift */; };
+		247DBA6F1E6C862E00F0B34E /* SelectTaskTableViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247DBA6E1E6C862E00F0B34E /* SelectTaskTableViewData.swift */; };
+		249A08BA1E4671840053055E /* EditTaskTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249A08B91E4671840053055E /* EditTaskTableViewController.swift */; };
+		249A08BC1E469BE70053055E /* AmountDonePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249A08BB1E469BE70053055E /* AmountDonePicker.swift */; };
+		249A08BE1E46AD150053055E /* groupsPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249A08BD1E46AD150053055E /* groupsPicker.swift */; };
+		249B7B7C1E4535C9006979BA /* CreateTaskTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249B7B7B1E4535C9006979BA /* CreateTaskTableViewController.swift */; };
+		24B2A2041E419A5800B0937C /* ListsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B2A2031E419A5800B0937C /* ListsTableViewController.swift */; };
+		24B2A2121E419DC400B0937C /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B2A2111E419DC400B0937C /* Colors.swift */; };
+		24B2A2141E41A31200B0937C /* CreateListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B2A2131E41A31200B0937C /* CreateListTableViewController.swift */; };
+		24B2A2161E41A71A00B0937C /* ColorPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B2A2151E41A71A00B0937C /* ColorPickerView.swift */; };
+		24B2A21A1E4301EF00B0937C /* EditListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B2A2191E4301EF00B0937C /* EditListViewController.swift */; };
+		24C1CD2F1E45470000A15FFE /* PriorityPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C1CD2E1E45470000A15FFE /* PriorityPickerView.swift */; };
+		24E15DC41E8599A400E5EE9A /* NowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E15DC31E8599A400E5EE9A /* NowViewController.swift */; };
+		24EA162E1E847ADD00BBF466 /* DayPlanner.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24EA162C1E847ADD00BBF466 /* DayPlanner.storyboard */; };
+		626A63085C536C6BB5DA7C3D /* Pods_My_Great_Productivity_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5ACFD53AC276259CA8C2C94 /* Pods_My_Great_Productivity_App.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		244A13821E4194EF00A8133A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 244A13621E4194EF00A8133A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 244A13691E4194EF00A8133A;
+			remoteInfo = "My Great Productivity App";
+		};
+		244A138D1E4194F000A8133A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 244A13621E4194EF00A8133A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 244A13691E4194EF00A8133A;
+			remoteInfo = "My Great Productivity App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		241D9AF21E6C813000A3F51C /* ChoseTaskViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChoseTaskViewController.swift; sourceTree = "<group>"; };
+		2423ACE71E51579800C9E8F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Tasks.storyboard; sourceTree = "<group>"; };
+		2423ACEA1E515D1600C9E8F8 /* TodayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		24291DEC1E7E1B94004965BC /* DayPlannerMain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayPlannerMain.swift; sourceTree = "<group>"; };
+		24291DEE1E7F42F9004965BC /* ExistingPlansTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExistingPlansTableView.swift; sourceTree = "<group>"; };
+		24354CCB1E456EBB003300A7 /* PointsPickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PointsPickerView.swift; sourceTree = "<group>"; };
+		24354CD11E457469003300A7 /* useful.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = useful.swift; sourceTree = "<group>"; };
+		24354CD31E459628003300A7 /* TasksTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TasksTableViewController.swift; sourceTree = "<group>"; };
+		24354CD51E45967B003300A7 /* TaskCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskCell.swift; sourceTree = "<group>"; };
+		2441565E1E6FAE78006DA70E /* PlanTaskTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlanTaskTableView.swift; sourceTree = "<group>"; };
+		244682711E5E3EB9004E716D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Today+Overdue.storyboard"; sourceTree = "<group>"; };
+		244682731E5E4049004E716D /* OrderByPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderByPicker.swift; sourceTree = "<group>"; };
+		244682791E5E415E004E716D /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		2446827B1E5E45E3004E716D /* CreatePlanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreatePlanViewController.swift; sourceTree = "<group>"; };
+		2446827D1E66290F004E716D /* AdjustPlanViewController .swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AdjustPlanViewController .swift"; sourceTree = "<group>"; };
+		2448C8191E481A3D003FFA20 /* SortPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SortPicker.swift; sourceTree = "<group>"; };
+		2448C81B1E49061F003FFA20 /* RepeatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepeatViewController.swift; sourceTree = "<group>"; };
+		244A136A1E4194EF00A8133A /* My Great Productivity App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My Great Productivity App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		244A136D1E4194EF00A8133A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		244A136F1E4194EF00A8133A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		244A13721E4194EF00A8133A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		244A13751E4194EF00A8133A /* My_Great_Productivity_App.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = My_Great_Productivity_App.xcdatamodel; sourceTree = "<group>"; };
+		244A13771E4194EF00A8133A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		244A137A1E4194EF00A8133A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		244A137C1E4194EF00A8133A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		244A13811E4194EF00A8133A /* My Great Productivity AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "My Great Productivity AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		244A13851E4194EF00A8133A /* My_Great_Productivity_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = My_Great_Productivity_AppTests.swift; sourceTree = "<group>"; };
+		244A13871E4194EF00A8133A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		244A138C1E4194F000A8133A /* My Great Productivity AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "My Great Productivity AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		244A13901E4194F000A8133A /* My_Great_Productivity_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = My_Great_Productivity_AppUITests.swift; sourceTree = "<group>"; };
+		244A13921E4194F000A8133A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2452C11A1F8B32970000771D /* CellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellView.swift; sourceTree = "<group>"; };
+		245A304C1E9820890015EE7F /* TaskDoneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskDoneViewController.swift; sourceTree = "<group>"; };
+		247DBA6E1E6C862E00F0B34E /* SelectTaskTableViewData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectTaskTableViewData.swift; sourceTree = "<group>"; };
+		249A08B91E4671840053055E /* EditTaskTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditTaskTableViewController.swift; sourceTree = "<group>"; };
+		249A08BB1E469BE70053055E /* AmountDonePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmountDonePicker.swift; sourceTree = "<group>"; };
+		249A08BD1E46AD150053055E /* groupsPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = groupsPicker.swift; sourceTree = "<group>"; };
+		249B7B7B1E4535C9006979BA /* CreateTaskTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateTaskTableViewController.swift; sourceTree = "<group>"; };
+		24B2A2031E419A5800B0937C /* ListsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListsTableViewController.swift; sourceTree = "<group>"; };
+		24B2A2111E419DC400B0937C /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		24B2A2131E41A31200B0937C /* CreateListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateListTableViewController.swift; sourceTree = "<group>"; };
+		24B2A2151E41A71A00B0937C /* ColorPickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorPickerView.swift; sourceTree = "<group>"; };
+		24B2A2191E4301EF00B0937C /* EditListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditListViewController.swift; sourceTree = "<group>"; };
+		24C1CD2E1E45470000A15FFE /* PriorityPickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PriorityPickerView.swift; sourceTree = "<group>"; };
+		24E15DC31E8599A400E5EE9A /* NowViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NowViewController.swift; sourceTree = "<group>"; };
+		24EA162D1E847ADD00BBF466 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/DayPlanner.storyboard; sourceTree = "<group>"; };
+		7B2111830844F7A7BB30D98A /* Pods-My Great Productivity App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-My Great Productivity App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-My Great Productivity App/Pods-My Great Productivity App.debug.xcconfig"; sourceTree = "<group>"; };
+		8B40B7D415154352AB093FF2 /* Pods-My Great Productivity App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-My Great Productivity App.release.xcconfig"; path = "Pods/Target Support Files/Pods-My Great Productivity App/Pods-My Great Productivity App.release.xcconfig"; sourceTree = "<group>"; };
+		B5ACFD53AC276259CA8C2C94 /* Pods_My_Great_Productivity_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_My_Great_Productivity_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		244A13671E4194EF00A8133A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				626A63085C536C6BB5DA7C3D /* Pods_My_Great_Productivity_App.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		244A137E1E4194EF00A8133A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		244A13891E4194F000A8133A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		14670453B34A4DC88DA44254 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7B2111830844F7A7BB30D98A /* Pods-My Great Productivity App.debug.xcconfig */,
+				8B40B7D415154352AB093FF2 /* Pods-My Great Productivity App.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		2423ACE91E515CFB00C9E8F8 /* Tasks */ = {
+			isa = PBXGroup;
+			children = (
+				2423ACEA1E515D1600C9E8F8 /* TodayViewController.swift */,
+				24B2A2111E419DC400B0937C /* Colors.swift */,
+				244A136D1E4194EF00A8133A /* AppDelegate.swift */,
+				244A136F1E4194EF00A8133A /* ViewController.swift */,
+				24B2A2031E419A5800B0937C /* ListsTableViewController.swift */,
+				24B2A2131E41A31200B0937C /* CreateListTableViewController.swift */,
+				24B2A2191E4301EF00B0937C /* EditListViewController.swift */,
+				249B7B7B1E4535C9006979BA /* CreateTaskTableViewController.swift */,
+				249A08B91E4671840053055E /* EditTaskTableViewController.swift */,
+				24354CD31E459628003300A7 /* TasksTableViewController.swift */,
+				2448C81B1E49061F003FFA20 /* RepeatViewController.swift */,
+				24B2A2151E41A71A00B0937C /* ColorPickerView.swift */,
+				24C1CD2E1E45470000A15FFE /* PriorityPickerView.swift */,
+				24354CCB1E456EBB003300A7 /* PointsPickerView.swift */,
+				249A08BB1E469BE70053055E /* AmountDonePicker.swift */,
+				249A08BD1E46AD150053055E /* groupsPicker.swift */,
+				2448C8191E481A3D003FFA20 /* SortPicker.swift */,
+				24354CD51E45967B003300A7 /* TaskCell.swift */,
+				24354CD11E457469003300A7 /* useful.swift */,
+			);
+			name = Tasks;
+			sourceTree = "<group>";
+		};
+		244A13611E4194EF00A8133A = {
+			isa = PBXGroup;
+			children = (
+				244A136C1E4194EF00A8133A /* My Great Productivity App */,
+				244A13841E4194EF00A8133A /* My Great Productivity AppTests */,
+				244A138F1E4194F000A8133A /* My Great Productivity AppUITests */,
+				244A136B1E4194EF00A8133A /* Products */,
+				14670453B34A4DC88DA44254 /* Pods */,
+				D3A6DE617C9DA75F201A6687 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		244A136B1E4194EF00A8133A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				244A136A1E4194EF00A8133A /* My Great Productivity App.app */,
+				244A13811E4194EF00A8133A /* My Great Productivity AppTests.xctest */,
+				244A138C1E4194F000A8133A /* My Great Productivity AppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		244A136C1E4194EF00A8133A /* My Great Productivity App */ = {
+			isa = PBXGroup;
+			children = (
+				24EA162F1E847AEA00BBF466 /* Day Planner */,
+				2423ACE91E515CFB00C9E8F8 /* Tasks */,
+				244A13711E4194EF00A8133A /* Main.storyboard */,
+				24EA162C1E847ADD00BBF466 /* DayPlanner.storyboard */,
+				244682701E5E3EB9004E716D /* Today+Overdue.storyboard */,
+				2423ACE61E51579800C9E8F8 /* Tasks.storyboard */,
+				244A13771E4194EF00A8133A /* Assets.xcassets */,
+				244A13791E4194EF00A8133A /* LaunchScreen.storyboard */,
+				244A137C1E4194EF00A8133A /* Info.plist */,
+				244A13741E4194EF00A8133A /* My_Great_Productivity_App.xcdatamodeld */,
+				24E15DC31E8599A400E5EE9A /* NowViewController.swift */,
+				245A304C1E9820890015EE7F /* TaskDoneViewController.swift */,
+				2452C11A1F8B32970000771D /* CellView.swift */,
+			);
+			path = "My Great Productivity App";
+			sourceTree = "<group>";
+		};
+		244A13841E4194EF00A8133A /* My Great Productivity AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				244A13851E4194EF00A8133A /* My_Great_Productivity_AppTests.swift */,
+				244A13871E4194EF00A8133A /* Info.plist */,
+			);
+			path = "My Great Productivity AppTests";
+			sourceTree = "<group>";
+		};
+		244A138F1E4194F000A8133A /* My Great Productivity AppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				244A13901E4194F000A8133A /* My_Great_Productivity_AppUITests.swift */,
+				244A13921E4194F000A8133A /* Info.plist */,
+			);
+			path = "My Great Productivity AppUITests";
+			sourceTree = "<group>";
+		};
+		24EA162F1E847AEA00BBF466 /* Day Planner */ = {
+			isa = PBXGroup;
+			children = (
+				244682731E5E4049004E716D /* OrderByPicker.swift */,
+				2446827B1E5E45E3004E716D /* CreatePlanViewController.swift */,
+				244682791E5E415E004E716D /* Extension.swift */,
+				2446827D1E66290F004E716D /* AdjustPlanViewController .swift */,
+				241D9AF21E6C813000A3F51C /* ChoseTaskViewController.swift */,
+				247DBA6E1E6C862E00F0B34E /* SelectTaskTableViewData.swift */,
+				2441565E1E6FAE78006DA70E /* PlanTaskTableView.swift */,
+				24291DEC1E7E1B94004965BC /* DayPlannerMain.swift */,
+				24291DEE1E7F42F9004965BC /* ExistingPlansTableView.swift */,
+			);
+			name = "Day Planner";
+			sourceTree = "<group>";
+		};
+		D3A6DE617C9DA75F201A6687 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B5ACFD53AC276259CA8C2C94 /* Pods_My_Great_Productivity_App.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		244A13691E4194EF00A8133A /* My Great Productivity App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 244A13951E4194F000A8133A /* Build configuration list for PBXNativeTarget "My Great Productivity App" */;
+			buildPhases = (
+				5A466A4D74D29A3799370BF6 /* [CP] Check Pods Manifest.lock */,
+				244A13661E4194EF00A8133A /* Sources */,
+				244A13671E4194EF00A8133A /* Frameworks */,
+				244A13681E4194EF00A8133A /* Resources */,
+				3432C6909F6F805AAFDA7832 /* [CP] Embed Pods Frameworks */,
+				9F50F8748C56392E6E66D0E5 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "My Great Productivity App";
+			productName = "My Great Productivity App";
+			productReference = 244A136A1E4194EF00A8133A /* My Great Productivity App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		244A13801E4194EF00A8133A /* My Great Productivity AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 244A13981E4194F000A8133A /* Build configuration list for PBXNativeTarget "My Great Productivity AppTests" */;
+			buildPhases = (
+				244A137D1E4194EF00A8133A /* Sources */,
+				244A137E1E4194EF00A8133A /* Frameworks */,
+				244A137F1E4194EF00A8133A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				244A13831E4194EF00A8133A /* PBXTargetDependency */,
+			);
+			name = "My Great Productivity AppTests";
+			productName = "My Great Productivity AppTests";
+			productReference = 244A13811E4194EF00A8133A /* My Great Productivity AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		244A138B1E4194F000A8133A /* My Great Productivity AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 244A139B1E4194F000A8133A /* Build configuration list for PBXNativeTarget "My Great Productivity AppUITests" */;
+			buildPhases = (
+				244A13881E4194F000A8133A /* Sources */,
+				244A13891E4194F000A8133A /* Frameworks */,
+				244A138A1E4194F000A8133A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				244A138E1E4194F000A8133A /* PBXTargetDependency */,
+			);
+			name = "My Great Productivity AppUITests";
+			productName = "My Great Productivity AppUITests";
+			productReference = 244A138C1E4194F000A8133A /* My Great Productivity AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		244A13621E4194EF00A8133A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Ana Vitoria do Valle Costa";
+				TargetAttributes = {
+					244A13691E4194EF00A8133A = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 8PJ7P56FWL;
+						ProvisioningStyle = Automatic;
+					};
+					244A13801E4194EF00A8133A = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 537E9MH96M;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 244A13691E4194EF00A8133A;
+					};
+					244A138B1E4194F000A8133A = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 537E9MH96M;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 244A13691E4194EF00A8133A;
+					};
+				};
+			};
+			buildConfigurationList = 244A13651E4194EF00A8133A /* Build configuration list for PBXProject "My Great Productivity App" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 244A13611E4194EF00A8133A;
+			productRefGroup = 244A136B1E4194EF00A8133A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				244A13691E4194EF00A8133A /* My Great Productivity App */,
+				244A13801E4194EF00A8133A /* My Great Productivity AppTests */,
+				244A138B1E4194F000A8133A /* My Great Productivity AppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		244A13681E4194EF00A8133A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				244A137B1E4194EF00A8133A /* LaunchScreen.storyboard in Resources */,
+				2423ACE81E51579800C9E8F8 /* Tasks.storyboard in Resources */,
+				24EA162E1E847ADD00BBF466 /* DayPlanner.storyboard in Resources */,
+				244A13781E4194EF00A8133A /* Assets.xcassets in Resources */,
+				244682721E5E3EB9004E716D /* Today+Overdue.storyboard in Resources */,
+				244A13731E4194EF00A8133A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		244A137F1E4194EF00A8133A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		244A138A1E4194F000A8133A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3432C6909F6F805AAFDA7832 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-My Great Productivity App/Pods-My Great Productivity App-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/JTAppleCalendar/JTAppleCalendar.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JTAppleCalendar.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-My Great Productivity App/Pods-My Great Productivity App-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5A466A4D74D29A3799370BF6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-My Great Productivity App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9F50F8748C56392E6E66D0E5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-My Great Productivity App/Pods-My Great Productivity App-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		244A13661E4194EF00A8133A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24B2A2141E41A31200B0937C /* CreateListTableViewController.swift in Sources */,
+				2446827E1E66290F004E716D /* AdjustPlanViewController .swift in Sources */,
+				24B2A2121E419DC400B0937C /* Colors.swift in Sources */,
+				24354CD21E457469003300A7 /* useful.swift in Sources */,
+				2452C11B1F8B32970000771D /* CellView.swift in Sources */,
+				24354CD61E45967B003300A7 /* TaskCell.swift in Sources */,
+				24354CCC1E456EBB003300A7 /* PointsPickerView.swift in Sources */,
+				2448C81A1E481A3D003FFA20 /* SortPicker.swift in Sources */,
+				249A08BC1E469BE70053055E /* AmountDonePicker.swift in Sources */,
+				244A13701E4194EF00A8133A /* ViewController.swift in Sources */,
+				249A08BE1E46AD150053055E /* groupsPicker.swift in Sources */,
+				2446827C1E5E45E3004E716D /* CreatePlanViewController.swift in Sources */,
+				2441565F1E6FAE78006DA70E /* PlanTaskTableView.swift in Sources */,
+				244A136E1E4194EF00A8133A /* AppDelegate.swift in Sources */,
+				244A13761E4194EF00A8133A /* My_Great_Productivity_App.xcdatamodeld in Sources */,
+				24E15DC41E8599A400E5EE9A /* NowViewController.swift in Sources */,
+				245A304D1E9820890015EE7F /* TaskDoneViewController.swift in Sources */,
+				24291DED1E7E1B94004965BC /* DayPlannerMain.swift in Sources */,
+				24354CD41E459628003300A7 /* TasksTableViewController.swift in Sources */,
+				24B2A2161E41A71A00B0937C /* ColorPickerView.swift in Sources */,
+				24B2A21A1E4301EF00B0937C /* EditListViewController.swift in Sources */,
+				2423ACEB1E515D1600C9E8F8 /* TodayViewController.swift in Sources */,
+				24291DEF1E7F42F9004965BC /* ExistingPlansTableView.swift in Sources */,
+				249B7B7C1E4535C9006979BA /* CreateTaskTableViewController.swift in Sources */,
+				24C1CD2F1E45470000A15FFE /* PriorityPickerView.swift in Sources */,
+				247DBA6F1E6C862E00F0B34E /* SelectTaskTableViewData.swift in Sources */,
+				24B2A2041E419A5800B0937C /* ListsTableViewController.swift in Sources */,
+				2448C81C1E49061F003FFA20 /* RepeatViewController.swift in Sources */,
+				249A08BA1E4671840053055E /* EditTaskTableViewController.swift in Sources */,
+				2446827A1E5E415E004E716D /* Extension.swift in Sources */,
+				241D9AF31E6C813000A3F51C /* ChoseTaskViewController.swift in Sources */,
+				244682741E5E4049004E716D /* OrderByPicker.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		244A137D1E4194EF00A8133A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				244A13861E4194EF00A8133A /* My_Great_Productivity_AppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		244A13881E4194F000A8133A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				244A13911E4194F000A8133A /* My_Great_Productivity_AppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		244A13831E4194EF00A8133A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 244A13691E4194EF00A8133A /* My Great Productivity App */;
+			targetProxy = 244A13821E4194EF00A8133A /* PBXContainerItemProxy */;
+		};
+		244A138E1E4194F000A8133A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 244A13691E4194EF00A8133A /* My Great Productivity App */;
+			targetProxy = 244A138D1E4194F000A8133A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2423ACE61E51579800C9E8F8 /* Tasks.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2423ACE71E51579800C9E8F8 /* Base */,
+			);
+			name = Tasks.storyboard;
+			sourceTree = "<group>";
+		};
+		244682701E5E3EB9004E716D /* Today+Overdue.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				244682711E5E3EB9004E716D /* Base */,
+			);
+			name = "Today+Overdue.storyboard";
+			sourceTree = "<group>";
+		};
+		244A13711E4194EF00A8133A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				244A13721E4194EF00A8133A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		244A13791E4194EF00A8133A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				244A137A1E4194EF00A8133A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		24EA162C1E847ADD00BBF466 /* DayPlanner.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				24EA162D1E847ADD00BBF466 /* Base */,
+			);
+			name = DayPlanner.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		244A13931E4194F000A8133A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		244A13941E4194F000A8133A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		244A13961E4194F000A8133A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B2111830844F7A7BB30D98A /* Pods-My Great Productivity App.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8PJ7P56FWL;
+				INFOPLIST_FILE = "My Great Productivity App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = toiavalle.Ai1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		244A13971E4194F000A8133A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B40B7D415154352AB093FF2 /* Pods-My Great Productivity App.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8PJ7P56FWL;
+				INFOPLIST_FILE = "My Great Productivity App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = toiavalle.Ai1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		244A13991E4194F000A8133A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 537E9MH96M;
+				INFOPLIST_FILE = "My Great Productivity AppTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "toiavalle.My-Great-Productivity-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/My Great Productivity App.app/My Great Productivity App";
+			};
+			name = Debug;
+		};
+		244A139A1E4194F000A8133A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 537E9MH96M;
+				INFOPLIST_FILE = "My Great Productivity AppTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "toiavalle.My-Great-Productivity-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/My Great Productivity App.app/My Great Productivity App";
+			};
+			name = Release;
+		};
+		244A139C1E4194F000A8133A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 537E9MH96M;
+				INFOPLIST_FILE = "My Great Productivity AppUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "toiavalle.My-Great-Productivity-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "My Great Productivity App";
+			};
+			name = Debug;
+		};
+		244A139D1E4194F000A8133A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 537E9MH96M;
+				INFOPLIST_FILE = "My Great Productivity AppUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "toiavalle.My-Great-Productivity-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "My Great Productivity App";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		244A13651E4194EF00A8133A /* Build configuration list for PBXProject "My Great Productivity App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				244A13931E4194F000A8133A /* Debug */,
+				244A13941E4194F000A8133A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		244A13951E4194F000A8133A /* Build configuration list for PBXNativeTarget "My Great Productivity App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				244A13961E4194F000A8133A /* Debug */,
+				244A13971E4194F000A8133A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		244A13981E4194F000A8133A /* Build configuration list for PBXNativeTarget "My Great Productivity AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				244A13991E4194F000A8133A /* Debug */,
+				244A139A1E4194F000A8133A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		244A139B1E4194F000A8133A /* Build configuration list for PBXNativeTarget "My Great Productivity AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				244A139C1E4194F000A8133A /* Debug */,
+				244A139D1E4194F000A8133A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		244A13741E4194EF00A8133A /* My_Great_Productivity_App.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				244A13751E4194EF00A8133A /* My_Great_Productivity_App.xcdatamodel */,
+			);
+			currentVersion = 244A13751E4194EF00A8133A /* My_Great_Productivity_App.xcdatamodel */;
+			path = My_Great_Productivity_App.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 244A13621E4194EF00A8133A /* Project object */;
+}
